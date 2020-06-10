@@ -1,0 +1,1920 @@
+{
+	"29de7e004f69af5024b476b032e88603.29de7e004f69af5024b476b032e88603": {
+		"Count": 3,
+		"CrashEntry": {
+			"entry": {
+				"info": {
+					"stack": [
+						{
+							"address": 6037947,
+							"symbol": "HostStatistics::HostStatistics",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4850635,
+							"symbol": "HostStatisticsCfg::createInstance",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4859846,
+							"symbol": "CfgHelper\u003cHostStatistics,",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4575130,
+							"symbol": "ConfigManager::parseConfig",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4563322,
+							"symbol": "main",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						}
+					],
+					"registers": [
+						{
+							"name": "rax",
+							"value": 0
+						},
+						{
+							"name": "rbx",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "rcx",
+							"value": 47961
+						},
+						{
+							"name": "rdx",
+							"value": 9280256
+						},
+						{
+							"name": "rsi",
+							"value": 9347096
+						},
+						{
+							"name": "rdi",
+							"value": 0
+						},
+						{
+							"name": "rbp",
+							"value": 0
+						},
+						{
+							"name": "rsp",
+							"value": 140737488347088
+						},
+						{
+							"name": "r8",
+							"value": 1
+						},
+						{
+							"name": "r9",
+							"value": 0
+						},
+						{
+							"name": "r10",
+							"value": 18
+						},
+						{
+							"name": "r11",
+							"value": 140737323348928
+						},
+						{
+							"name": "r12",
+							"value": 3
+						},
+						{
+							"name": "r13",
+							"value": 140737488347408
+						},
+						{
+							"name": "r14",
+							"value": 10091360
+						},
+						{
+							"name": "r15",
+							"value": 140737488347200
+						},
+						{
+							"name": "rip",
+							"value": 6037947
+						},
+						{
+							"name": "eflags",
+							"value": 66050
+						},
+						{
+							"name": "cs",
+							"value": 51
+						},
+						{
+							"name": "ss",
+							"value": 43
+						},
+						{
+							"name": "ds",
+							"value": 0
+						},
+						{
+							"name": "es",
+							"value": 0
+						},
+						{
+							"name": "fs",
+							"value": 0
+						},
+						{
+							"name": "gs",
+							"value": 0
+						}
+					],
+					"disassembly": [
+						{
+							"address": 6037919,
+							"text": "movsxd rcx,DWORD PTR fs:[rbx]"
+						},
+						{
+							"address": 6037923,
+							"text": "mov rdx,QWORD PTR [rip+0x316356] # 0x8d8500 \u003c__afl_area_ptr\u003e"
+						},
+						{
+							"address": 6037930,
+							"text": "xor rcx,0xc384"
+						},
+						{
+							"address": 6037937,
+							"text": "inc BYTE PTR [rdx+rcx*1]"
+						},
+						{
+							"address": 6037940,
+							"text": "mov DWORD PTR fs:[rbx],0x61c2"
+						},
+						{
+							"address": 6037947,
+							"text": "mov rax,QWORD PTR [rax+0x18]"
+						},
+						{
+							"address": 6037951,
+							"text": "mov rax,QWORD PTR [rax]"
+						},
+						{
+							"address": 6037954,
+							"text": "mov eax,DWORD PTR [rax]"
+						},
+						{
+							"address": 6037956,
+							"text": "mov DWORD PTR [r14+0x170],eax"
+						},
+						{
+							"address": 6037963,
+							"text": "xor edi,edi"
+						}
+					],
+					"faulting_insn": {
+						"address": 6037947,
+						"text": "mov rax,QWORD PTR [rax+0x18]"
+					},
+					"faulting_frame": {
+						"address": 6037947,
+						"symbol": "HostStatistics::HostStatistics",
+						"module": "/data/fuzzing/vermont-fuzzing/vermont"
+					},
+					"hash": "29de7e004f69af5024b476b032e88603.29de7e004f69af5024b476b032e88603",
+					"classification": "PROBABLY_NOT_EXPLOITABLE",
+					"extra": [
+						"Description: Access violation near NULL on source operand",
+						"Short description: SourceAvNearNull (16/22)",
+						"Explanation: The target crashed on an access violation at an address matching the source operand of the current instruction. This likely indicates a read access violation, which may mean the application crashed on a simple NULL dereference to data structure that has no immediate effect on control of the processor."
+					]
+				},
+				"timestamp": 1591152404,
+				"orig_filename": "/data/fuzzing/xmlfuzz_out/crashes/id:000026,sig:11,src:000092,op:ext_AO,pos:733",
+				"sha1": "O5dXDldCMJVTtIn+CLn0dRevtlA=",
+				"command": [
+					"/data/fuzzing/vermont-fuzzing/vermont",
+					"-f",
+					"/data/fuzzing/xmlfuzz_out/crashes/id:000026,sig:11,src:000092,op:ext_AO,pos:733"
+				]
+			},
+			"data": null
+		},
+		"Uname": "Linux fi-fuzzing 4.15.0-101-generic #102-Ubuntu SMP Mon May 11 10:07:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\n"
+	},
+	"449f1eab459578f0aa2dcba424819634.449f1eab459578f0aa2dcba424819634": {
+		"Count": 1,
+		"CrashEntry": {
+			"entry": {
+				"info": {
+					"stack": [
+						{
+							"address": 6223120,
+							"symbol": "IpfixCsExporter::performShutdown",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 6527150,
+							"symbol": "Module::shutdown",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 5267003,
+							"symbol": "CfgHelper\u003cIpfixCsExporter,",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4585219,
+							"symbol": "ConfigManager::shutdown",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4564978,
+							"symbol": "main",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						}
+					],
+					"registers": [
+						{
+							"name": "rax",
+							"value": 34246
+						},
+						{
+							"name": "rbx",
+							"value": 10057472
+						},
+						{
+							"name": "rcx",
+							"value": 9280256
+						},
+						{
+							"name": "rdx",
+							"value": 9347088
+						},
+						{
+							"name": "rsi",
+							"value": 10057840
+						},
+						{
+							"name": "rdi",
+							"value": 0
+						},
+						{
+							"name": "rbp",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "rsp",
+							"value": 140737488347440
+						},
+						{
+							"name": "r8",
+							"value": 0
+						},
+						{
+							"name": "r9",
+							"value": 0
+						},
+						{
+							"name": "r10",
+							"value": 18
+						},
+						{
+							"name": "r11",
+							"value": 518
+						},
+						{
+							"name": "r12",
+							"value": 9427808
+						},
+						{
+							"name": "r13",
+							"value": 0
+						},
+						{
+							"name": "r14",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "r15",
+							"value": 1
+						},
+						{
+							"name": "rip",
+							"value": 6223120
+						},
+						{
+							"name": "eflags",
+							"value": 66050
+						},
+						{
+							"name": "cs",
+							"value": 51
+						},
+						{
+							"name": "ss",
+							"value": 43
+						},
+						{
+							"name": "ds",
+							"value": 0
+						},
+						{
+							"name": "es",
+							"value": 0
+						},
+						{
+							"name": "fs",
+							"value": 0
+						},
+						{
+							"name": "gs",
+							"value": 0
+						}
+					],
+					"disassembly": [
+						{
+							"address": 6223089,
+							"text": "mov rcx,QWORD PTR [rip+0x2e9008] # 0x8d8500 \u003c__afl_area_ptr\u003e"
+						},
+						{
+							"address": 6223096,
+							"text": "xor rax,0x823a"
+						},
+						{
+							"address": 6223102,
+							"text": "inc BYTE PTR [rcx+rax*1]"
+						},
+						{
+							"address": 6223105,
+							"text": "mov DWORD PTR fs:[r14],0x411d"
+						},
+						{
+							"address": 6223113,
+							"text": "mov rdi,QWORD PTR [rbx+0x118]"
+						},
+						{
+							"address": 6223120,
+							"text": "mov rax,QWORD PTR [rdi]"
+						},
+						{
+							"address": 6223123,
+							"text": "xor esi,esi"
+						},
+						{
+							"address": 6223125,
+							"text": "call QWORD PTR [rax+0x18]"
+						},
+						{
+							"address": 6223128,
+							"text": "mov rax,QWORD PTR fs:0x28"
+						},
+						{
+							"address": 6223137,
+							"text": "cmp rax,QWORD PTR [rsp]"
+						}
+					],
+					"faulting_insn": {
+						"address": 6223120,
+						"text": "mov rax,QWORD PTR [rdi]"
+					},
+					"faulting_frame": {
+						"address": 6223120,
+						"symbol": "IpfixCsExporter::performShutdown",
+						"module": "/data/fuzzing/vermont-fuzzing/vermont"
+					},
+					"hash": "449f1eab459578f0aa2dcba424819634.449f1eab459578f0aa2dcba424819634",
+					"classification": "PROBABLY_NOT_EXPLOITABLE",
+					"extra": [
+						"Description: Access violation near NULL on source operand",
+						"Short description: SourceAvNearNull (16/22)",
+						"Explanation: The target crashed on an access violation at an address matching the source operand of the current instruction. This likely indicates a read access violation, which may mean the application crashed on a simple NULL dereference to data structure that has no immediate effect on control of the processor."
+					]
+				},
+				"timestamp": 1591110923,
+				"orig_filename": "/data/fuzzing/xmlfuzz_out/crashes/id:000007,sig:11,src:000002,op:flip1,pos:785",
+				"sha1": "6/LOALe0n0ch3yq6OuMiIeLYqaA=",
+				"command": [
+					"/data/fuzzing/vermont-fuzzing/vermont",
+					"-f",
+					"/data/fuzzing/xmlfuzz_out/crashes/id:000007,sig:11,src:000002,op:flip1,pos:785"
+				]
+			},
+			"data": null
+		},
+		"Uname": "Linux fi-fuzzing 4.15.0-101-generic #102-Ubuntu SMP Mon May 11 10:07:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\n"
+	},
+	"49fe48bebb2871c509f3a12c365c02f8.49fe48bebb2871c509f3a12c365c02f8": {
+		"Count": 1,
+		"CrashEntry": {
+			"entry": {
+				"info": {
+					"stack": [
+						{
+							"address": 6238471,
+							"symbol": "IpfixNetflowExporter::performShutdown",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 6527150,
+							"symbol": "Module::shutdown",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 5328283,
+							"symbol": "CfgHelper\u003cIpfixNetflowExporter,",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4585219,
+							"symbol": "ConfigManager::shutdown",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4564978,
+							"symbol": "main",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						}
+					],
+					"registers": [
+						{
+							"name": "rax",
+							"value": 0
+						},
+						{
+							"name": "rbx",
+							"value": 10060048
+						},
+						{
+							"name": "rcx",
+							"value": 140737349710919
+						},
+						{
+							"name": "rdx",
+							"value": 0
+						},
+						{
+							"name": "rsi",
+							"value": 1
+						},
+						{
+							"name": "rdi",
+							"value": 0
+						},
+						{
+							"name": "rbp",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "rsp",
+							"value": 140737488347408
+						},
+						{
+							"name": "r8",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "r9",
+							"value": 0
+						},
+						{
+							"name": "r10",
+							"value": 18
+						},
+						{
+							"name": "r11",
+							"value": 0
+						},
+						{
+							"name": "r12",
+							"value": 9427808
+						},
+						{
+							"name": "r13",
+							"value": 0
+						},
+						{
+							"name": "r14",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "r15",
+							"value": 1
+						},
+						{
+							"name": "rip",
+							"value": 6238471
+						},
+						{
+							"name": "eflags",
+							"value": 66054
+						},
+						{
+							"name": "cs",
+							"value": 51
+						},
+						{
+							"name": "ss",
+							"value": 43
+						},
+						{
+							"name": "ds",
+							"value": 0
+						},
+						{
+							"name": "es",
+							"value": 0
+						},
+						{
+							"name": "fs",
+							"value": 0
+						},
+						{
+							"name": "gs",
+							"value": 0
+						}
+					],
+					"disassembly": [
+						{
+							"address": 6238442,
+							"text": "inc BYTE PTR [rcx+rax*1]"
+						},
+						{
+							"address": 6238445,
+							"text": "mov DWORD PTR fs:[r14],0x1877"
+						},
+						{
+							"address": 6238453,
+							"text": "mov edi,DWORD PTR [rbx+0x120]"
+						},
+						{
+							"address": 6238459,
+							"text": "call 0x456630 \u003cclose@plt\u003e"
+						},
+						{
+							"address": 6238464,
+							"text": "mov rdi,QWORD PTR [rbx+0x118]"
+						},
+						{
+							"address": 6238471,
+							"text": "mov rax,QWORD PTR [rdi]"
+						},
+						{
+							"address": 6238474,
+							"text": "xor esi,esi"
+						},
+						{
+							"address": 6238476,
+							"text": "call QWORD PTR [rax+0x18]"
+						},
+						{
+							"address": 6238479,
+							"text": "mov rax,QWORD PTR fs:0x28"
+						},
+						{
+							"address": 6238488,
+							"text": "cmp rax,QWORD PTR [rsp+0x18]"
+						}
+					],
+					"faulting_insn": {
+						"address": 6238471,
+						"text": "mov rax,QWORD PTR [rdi]"
+					},
+					"faulting_frame": {
+						"address": 6238471,
+						"symbol": "IpfixNetflowExporter::performShutdown",
+						"module": "/data/fuzzing/vermont-fuzzing/vermont"
+					},
+					"hash": "49fe48bebb2871c509f3a12c365c02f8.49fe48bebb2871c509f3a12c365c02f8",
+					"classification": "PROBABLY_NOT_EXPLOITABLE",
+					"extra": [
+						"Description: Access violation near NULL on source operand",
+						"Short description: SourceAvNearNull (16/22)",
+						"Explanation: The target crashed on an access violation at an address matching the source operand of the current instruction. This likely indicates a read access violation, which may mean the application crashed on a simple NULL dereference to data structure that has no immediate effect on control of the processor."
+					]
+				},
+				"timestamp": 1591115593,
+				"orig_filename": "/data/fuzzing/xmlfuzz_out/crashes/id:000010,sig:11,src:000005,op:flip1,pos:975",
+				"sha1": "7My9iw5YUba7z3RJUhhMIdyKCts=",
+				"command": [
+					"/data/fuzzing/vermont-fuzzing/vermont",
+					"-f",
+					"/data/fuzzing/xmlfuzz_out/crashes/id:000010,sig:11,src:000005,op:flip1,pos:975"
+				]
+			},
+			"data": null
+		},
+		"Uname": "Linux fi-fuzzing 4.15.0-101-generic #102-Ubuntu SMP Mon May 11 10:07:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\n"
+	},
+	"820084e5a47e409a9f65f43645c3d911.820084e5a47e409a9f65f43645c3d911": {
+		"Count": 1,
+		"CrashEntry": {
+			"entry": {
+				"info": {
+					"stack": [
+						{
+							"address": 5976808,
+							"symbol": "P2PDetector::performShutdown",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 6527150,
+							"symbol": "Module::shutdown",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4791867,
+							"symbol": "CfgHelper\u003cP2PDetector,",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4585219,
+							"symbol": "ConfigManager::shutdown",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4564978,
+							"symbol": "main",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						}
+					],
+					"registers": [
+						{
+							"name": "rax",
+							"value": 10402061863582799616
+						},
+						{
+							"name": "rbx",
+							"value": 10055312
+						},
+						{
+							"name": "rcx",
+							"value": 9280256
+						},
+						{
+							"name": "rdx",
+							"value": 9280256
+						},
+						{
+							"name": "rsi",
+							"value": 0
+						},
+						{
+							"name": "rdi",
+							"value": 0
+						},
+						{
+							"name": "rbp",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "rsp",
+							"value": 140737488347440
+						},
+						{
+							"name": "r8",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "r9",
+							"value": 0
+						},
+						{
+							"name": "r10",
+							"value": 9347088
+						},
+						{
+							"name": "r11",
+							"value": 0
+						},
+						{
+							"name": "r12",
+							"value": 9427808
+						},
+						{
+							"name": "r13",
+							"value": 0
+						},
+						{
+							"name": "r14",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "r15",
+							"value": 1
+						},
+						{
+							"name": "rip",
+							"value": 5976808
+						},
+						{
+							"name": "eflags",
+							"value": 66050
+						},
+						{
+							"name": "cs",
+							"value": 51
+						},
+						{
+							"name": "ss",
+							"value": 43
+						},
+						{
+							"name": "ds",
+							"value": 0
+						},
+						{
+							"name": "es",
+							"value": 0
+						},
+						{
+							"name": "fs",
+							"value": 0
+						},
+						{
+							"name": "gs",
+							"value": 0
+						}
+					],
+					"disassembly": [
+						{
+							"address": 5976786,
+							"text": "mov DWORD PTR fs:[rax],0x3621"
+						},
+						{
+							"address": 5976793,
+							"text": "mov rax,QWORD PTR [rbx]"
+						},
+						{
+							"address": 5976796,
+							"text": "xor esi,esi"
+						},
+						{
+							"address": 5976798,
+							"text": "call QWORD PTR [rax+0x68]"
+						},
+						{
+							"address": 5976801,
+							"text": "mov rdi,QWORD PTR [rbx+0x118]"
+						},
+						{
+							"address": 5976808,
+							"text": "mov rax,QWORD PTR [rdi]"
+						},
+						{
+							"address": 5976811,
+							"text": "xor esi,esi"
+						},
+						{
+							"address": 5976813,
+							"text": "call QWORD PTR [rax+0x18]"
+						},
+						{
+							"address": 5976816,
+							"text": "mov rax,QWORD PTR fs:0x28"
+						},
+						{
+							"address": 5976825,
+							"text": "cmp rax,QWORD PTR [rsp+0x8]"
+						}
+					],
+					"faulting_insn": {
+						"address": 5976808,
+						"text": "mov rax,QWORD PTR [rdi]"
+					},
+					"faulting_frame": {
+						"address": 5976808,
+						"symbol": "P2PDetector::performShutdown",
+						"module": "/data/fuzzing/vermont-fuzzing/vermont"
+					},
+					"hash": "820084e5a47e409a9f65f43645c3d911.820084e5a47e409a9f65f43645c3d911",
+					"classification": "PROBABLY_NOT_EXPLOITABLE",
+					"extra": [
+						"Description: Access violation near NULL on source operand",
+						"Short description: SourceAvNearNull (16/22)",
+						"Explanation: The target crashed on an access violation at an address matching the source operand of the current instruction. This likely indicates a read access violation, which may mean the application crashed on a simple NULL dereference to data structure that has no immediate effect on control of the processor."
+					]
+				},
+				"timestamp": 1591123855,
+				"orig_filename": "/data/fuzzing/xmlfuzz_out/crashes/id:000015,sig:11,src:000010,op:flip1,pos:781",
+				"sha1": "N/OJ8MZYOV33F3CErAgFFpxwU+4=",
+				"command": [
+					"/data/fuzzing/vermont-fuzzing/vermont",
+					"-f",
+					"/data/fuzzing/xmlfuzz_out/crashes/id:000015,sig:11,src:000010,op:flip1,pos:781"
+				]
+			},
+			"data": null
+		},
+		"Uname": "Linux fi-fuzzing 4.15.0-101-generic #102-Ubuntu SMP Mon May 11 10:07:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\n"
+	},
+	"9d6cd83085ee70610cd4d1f4d7df13a0.b9f3a21fb187fb11d36d4f86a43654d4": {
+		"Count": 1,
+		"CrashEntry": {
+			"entry": {
+				"info": {
+					"stack": [
+						{
+							"address": 140737322270359,
+							"symbol": "__GI_raise",
+							"module": "(BL)"
+						},
+						{
+							"address": 140737322276865,
+							"symbol": "__GI_abort",
+							"module": "(BL)"
+						},
+						{
+							"address": 140737332709719,
+							"symbol": "None",
+							"module": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25"
+						},
+						{
+							"address": 140737332734694,
+							"symbol": "None",
+							"module": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25"
+						},
+						{
+							"address": 140737332734753,
+							"symbol": "std::terminate()",
+							"module": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25"
+						},
+						{
+							"address": 140737332735316,
+							"symbol": "__cxa_throw",
+							"module": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25"
+						},
+						{
+							"address": 140737332736732,
+							"symbol": "operator",
+							"module": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25"
+						},
+						{
+							"address": 6018761,
+							"symbol": "TRWPortscanDetector::TRWPortscanDetector",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4833050,
+							"symbol": "TRWPortscanDetectorCfg::createInstance",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4843586,
+							"symbol": "CfgHelper\u003cTRWPortscanDetector,",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4637436,
+							"symbol": "CfgHelper\u003cConnectionQueue\u003cIpfixRecord*\u003e,",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 6502269,
+							"symbol": "Connector::connect",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4574248,
+							"symbol": "ConfigManager::parseConfig",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4563322,
+							"symbol": "main",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						}
+					],
+					"registers": [
+						{
+							"name": "rax",
+							"value": 0
+						},
+						{
+							"name": "rbx",
+							"value": 140737333427074
+						},
+						{
+							"name": "rcx",
+							"value": 140737322270359
+						},
+						{
+							"name": "rdx",
+							"value": 0
+						},
+						{
+							"name": "rsi",
+							"value": 140737488346048
+						},
+						{
+							"name": "rdi",
+							"value": 2
+						},
+						{
+							"name": "rbp",
+							"value": 9274688
+						},
+						{
+							"name": "rsp",
+							"value": 140737488346048
+						},
+						{
+							"name": "r8",
+							"value": 0
+						},
+						{
+							"name": "r9",
+							"value": 140737488346048
+						},
+						{
+							"name": "r10",
+							"value": 8
+						},
+						{
+							"name": "r11",
+							"value": 582
+						},
+						{
+							"name": "r12",
+							"value": 10055984
+						},
+						{
+							"name": "r13",
+							"value": 10055736
+						},
+						{
+							"name": "r14",
+							"value": 805306368
+						},
+						{
+							"name": "r15",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "rip",
+							"value": 140737322270359
+						},
+						{
+							"name": "eflags",
+							"value": 582
+						},
+						{
+							"name": "cs",
+							"value": 51
+						},
+						{
+							"name": "ss",
+							"value": 43
+						},
+						{
+							"name": "ds",
+							"value": 0
+						},
+						{
+							"name": "es",
+							"value": 0
+						},
+						{
+							"name": "fs",
+							"value": 0
+						},
+						{
+							"name": "gs",
+							"value": 0
+						}
+					],
+					"disassembly": [
+						{
+							"address": 140737322270342,
+							"text": "xor edx,edx"
+						},
+						{
+							"address": 140737322270344,
+							"text": "mov rsi,r9"
+						},
+						{
+							"address": 140737322270347,
+							"text": "mov edi,0x2"
+						},
+						{
+							"address": 140737322270352,
+							"text": "mov eax,0xe"
+						},
+						{
+							"address": 140737322270357,
+							"text": "syscall"
+						},
+						{
+							"address": 140737322270359,
+							"text": "mov rcx,QWORD PTR [rsp+0x108]"
+						},
+						{
+							"address": 140737322270367,
+							"text": "xor rcx,QWORD PTR fs:0x28"
+						},
+						{
+							"address": 140737322270376,
+							"text": "mov eax,r8d"
+						},
+						{
+							"address": 140737322270379,
+							"text": "jne 0x7ffff619becc \u003c__GI_raise+252\u003e"
+						},
+						{
+							"address": 140737322270381,
+							"text": "add rsp,0x118"
+						}
+					],
+					"faulting_insn": {
+						"address": 140737322270359,
+						"text": "mov rcx,QWORD PTR [rsp+0x108]"
+					},
+					"faulting_frame": {
+						"address": 140737332709719,
+						"symbol": "None",
+						"module": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25"
+					},
+					"hash": "9d6cd83085ee70610cd4d1f4d7df13a0.b9f3a21fb187fb11d36d4f86a43654d4",
+					"classification": "UNKNOWN",
+					"extra": [
+						"Description: Abort signal",
+						"Short description: AbortSignal (20/22)",
+						"Explanation: The target is stopped on a SIGABRT. SIGABRTs are often generated by libc and compiled check-code to indicate potentially exploitable conditions. Unfortunately this command does not yet further analyze these crashes."
+					]
+				},
+				"timestamp": 1591129534,
+				"orig_filename": "/data/fuzzing/xmlfuzz_out/crashes/id:000016,sig:06,src:000013,op:flip1,pos:973",
+				"sha1": "QHN0oZ74mS1klTesv5JooBnCBgY=",
+				"command": [
+					"/data/fuzzing/vermont-fuzzing/vermont",
+					"-f",
+					"/data/fuzzing/xmlfuzz_out/crashes/id:000016,sig:06,src:000013,op:flip1,pos:973"
+				]
+			},
+			"data": null
+		},
+		"Uname": "Linux fi-fuzzing 4.15.0-101-generic #102-Ubuntu SMP Mon May 11 10:07:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\n"
+	},
+	"b53e0855eed93c690c54507de459f75c.63547c7ae7baff18d5ec8dacaba2b413": {
+		"Count": 3,
+		"CrashEntry": {
+			"entry": {
+				"info": {
+					"stack": [
+						{
+							"address": 6037947,
+							"symbol": "HostStatistics::HostStatistics",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4850635,
+							"symbol": "HostStatisticsCfg::createInstance",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4860866,
+							"symbol": "covariant",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4897482,
+							"symbol": "CfgHelper\u003cObserver,",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 6502269,
+							"symbol": "Connector::connect",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4574248,
+							"symbol": "ConfigManager::parseConfig",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4563322,
+							"symbol": "main",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						}
+					],
+					"registers": [
+						{
+							"name": "rax",
+							"value": 0
+						},
+						{
+							"name": "rbx",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "rcx",
+							"value": 47961
+						},
+						{
+							"name": "rdx",
+							"value": 9280256
+						},
+						{
+							"name": "rsi",
+							"value": 9347096
+						},
+						{
+							"name": "rdi",
+							"value": 0
+						},
+						{
+							"name": "rbp",
+							"value": 1
+						},
+						{
+							"name": "rsp",
+							"value": 140737488346656
+						},
+						{
+							"name": "r8",
+							"value": 2
+						},
+						{
+							"name": "r9",
+							"value": 0
+						},
+						{
+							"name": "r10",
+							"value": 18
+						},
+						{
+							"name": "r11",
+							"value": 140737323348928
+						},
+						{
+							"name": "r12",
+							"value": 1
+						},
+						{
+							"name": "r13",
+							"value": 140737488346977
+						},
+						{
+							"name": "r14",
+							"value": 10091360
+						},
+						{
+							"name": "r15",
+							"value": 140737488346768
+						},
+						{
+							"name": "rip",
+							"value": 6037947
+						},
+						{
+							"name": "eflags",
+							"value": 66050
+						},
+						{
+							"name": "cs",
+							"value": 51
+						},
+						{
+							"name": "ss",
+							"value": 43
+						},
+						{
+							"name": "ds",
+							"value": 0
+						},
+						{
+							"name": "es",
+							"value": 0
+						},
+						{
+							"name": "fs",
+							"value": 0
+						},
+						{
+							"name": "gs",
+							"value": 0
+						}
+					],
+					"disassembly": [
+						{
+							"address": 6037919,
+							"text": "movsxd rcx,DWORD PTR fs:[rbx]"
+						},
+						{
+							"address": 6037923,
+							"text": "mov rdx,QWORD PTR [rip+0x316356] # 0x8d8500 \u003c__afl_area_ptr\u003e"
+						},
+						{
+							"address": 6037930,
+							"text": "xor rcx,0xc384"
+						},
+						{
+							"address": 6037937,
+							"text": "inc BYTE PTR [rdx+rcx*1]"
+						},
+						{
+							"address": 6037940,
+							"text": "mov DWORD PTR fs:[rbx],0x61c2"
+						},
+						{
+							"address": 6037947,
+							"text": "mov rax,QWORD PTR [rax+0x18]"
+						},
+						{
+							"address": 6037951,
+							"text": "mov rax,QWORD PTR [rax]"
+						},
+						{
+							"address": 6037954,
+							"text": "mov eax,DWORD PTR [rax]"
+						},
+						{
+							"address": 6037956,
+							"text": "mov DWORD PTR [r14+0x170],eax"
+						},
+						{
+							"address": 6037963,
+							"text": "xor edi,edi"
+						}
+					],
+					"faulting_insn": {
+						"address": 6037947,
+						"text": "mov rax,QWORD PTR [rax+0x18]"
+					},
+					"faulting_frame": {
+						"address": 6037947,
+						"symbol": "HostStatistics::HostStatistics",
+						"module": "/data/fuzzing/vermont-fuzzing/vermont"
+					},
+					"hash": "b53e0855eed93c690c54507de459f75c.63547c7ae7baff18d5ec8dacaba2b413",
+					"classification": "PROBABLY_NOT_EXPLOITABLE",
+					"extra": [
+						"Description: Access violation near NULL on source operand",
+						"Short description: SourceAvNearNull (16/22)",
+						"Explanation: The target crashed on an access violation at an address matching the source operand of the current instruction. This likely indicates a read access violation, which may mean the application crashed on a simple NULL dereference to data structure that has no immediate effect on control of the processor."
+					]
+				},
+				"timestamp": 1591138078,
+				"orig_filename": "/data/fuzzing/xmlfuzz_out/crashes/id:000018,sig:11,src:000060,op:flip4,pos:747",
+				"sha1": "hkMf5Az7eMuh9oXNjTkVBS9sA8U=",
+				"command": [
+					"/data/fuzzing/vermont-fuzzing/vermont",
+					"-f",
+					"/data/fuzzing/xmlfuzz_out/crashes/id:000018,sig:11,src:000060,op:flip4,pos:747"
+				]
+			},
+			"data": null
+		},
+		"Uname": "Linux fi-fuzzing 4.15.0-101-generic #102-Ubuntu SMP Mon May 11 10:07:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\n"
+	},
+	"c8b48f43e189ba777a5deba95612d5c7.65072bb87c740f4f82849aa0c1ed62c3": {
+		"Count": 1,
+		"CrashEntry": {
+			"entry": {
+				"info": {
+					"stack": [
+						{
+							"address": 6037947,
+							"symbol": "HostStatistics::HostStatistics",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4850635,
+							"symbol": "HostStatisticsCfg::createInstance",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4860866,
+							"symbol": "covariant",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4597548,
+							"symbol": "CfgHelper\u003cConnectionQueue\u003cPacket*\u003e,",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 6502269,
+							"symbol": "Connector::connect",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4574248,
+							"symbol": "ConfigManager::parseConfig",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4563322,
+							"symbol": "main",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						}
+					],
+					"registers": [
+						{
+							"name": "rax",
+							"value": 0
+						},
+						{
+							"name": "rbx",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "rcx",
+							"value": 47961
+						},
+						{
+							"name": "rdx",
+							"value": 9280256
+						},
+						{
+							"name": "rsi",
+							"value": 9347096
+						},
+						{
+							"name": "rdi",
+							"value": 0
+						},
+						{
+							"name": "rbp",
+							"value": 0
+						},
+						{
+							"name": "rsp",
+							"value": 140737488346656
+						},
+						{
+							"name": "r8",
+							"value": 1
+						},
+						{
+							"name": "r9",
+							"value": 0
+						},
+						{
+							"name": "r10",
+							"value": 18
+						},
+						{
+							"name": "r11",
+							"value": 140737323348928
+						},
+						{
+							"name": "r12",
+							"value": 2
+						},
+						{
+							"name": "r13",
+							"value": 140737488346976
+						},
+						{
+							"name": "r14",
+							"value": 10091360
+						},
+						{
+							"name": "r15",
+							"value": 140737488346768
+						},
+						{
+							"name": "rip",
+							"value": 6037947
+						},
+						{
+							"name": "eflags",
+							"value": 66050
+						},
+						{
+							"name": "cs",
+							"value": 51
+						},
+						{
+							"name": "ss",
+							"value": 43
+						},
+						{
+							"name": "ds",
+							"value": 0
+						},
+						{
+							"name": "es",
+							"value": 0
+						},
+						{
+							"name": "fs",
+							"value": 0
+						},
+						{
+							"name": "gs",
+							"value": 0
+						}
+					],
+					"disassembly": [
+						{
+							"address": 6037919,
+							"text": "movsxd rcx,DWORD PTR fs:[rbx]"
+						},
+						{
+							"address": 6037923,
+							"text": "mov rdx,QWORD PTR [rip+0x316356] # 0x8d8500 \u003c__afl_area_ptr\u003e"
+						},
+						{
+							"address": 6037930,
+							"text": "xor rcx,0xc384"
+						},
+						{
+							"address": 6037937,
+							"text": "inc BYTE PTR [rdx+rcx*1]"
+						},
+						{
+							"address": 6037940,
+							"text": "mov DWORD PTR fs:[rbx],0x61c2"
+						},
+						{
+							"address": 6037947,
+							"text": "mov rax,QWORD PTR [rax+0x18]"
+						},
+						{
+							"address": 6037951,
+							"text": "mov rax,QWORD PTR [rax]"
+						},
+						{
+							"address": 6037954,
+							"text": "mov eax,DWORD PTR [rax]"
+						},
+						{
+							"address": 6037956,
+							"text": "mov DWORD PTR [r14+0x170],eax"
+						},
+						{
+							"address": 6037963,
+							"text": "xor edi,edi"
+						}
+					],
+					"faulting_insn": {
+						"address": 6037947,
+						"text": "mov rax,QWORD PTR [rax+0x18]"
+					},
+					"faulting_frame": {
+						"address": 6037947,
+						"symbol": "HostStatistics::HostStatistics",
+						"module": "/data/fuzzing/vermont-fuzzing/vermont"
+					},
+					"hash": "c8b48f43e189ba777a5deba95612d5c7.65072bb87c740f4f82849aa0c1ed62c3",
+					"classification": "PROBABLY_NOT_EXPLOITABLE",
+					"extra": [
+						"Description: Access violation near NULL on source operand",
+						"Short description: SourceAvNearNull (16/22)",
+						"Explanation: The target crashed on an access violation at an address matching the source operand of the current instruction. This likely indicates a read access violation, which may mean the application crashed on a simple NULL dereference to data structure that has no immediate effect on control of the processor."
+					]
+				},
+				"timestamp": 1591145781,
+				"orig_filename": "/data/fuzzing/xmlfuzz_out/crashes/id:000022,sig:11,src:000076,op:flip1,pos:763",
+				"sha1": "SlN48KzaWcj8mg0PgqGa5zFcS3M=",
+				"command": [
+					"/data/fuzzing/vermont-fuzzing/vermont",
+					"-f",
+					"/data/fuzzing/xmlfuzz_out/crashes/id:000022,sig:11,src:000076,op:flip1,pos:763"
+				]
+			},
+			"data": null
+		},
+		"Uname": "Linux fi-fuzzing 4.15.0-101-generic #102-Ubuntu SMP Mon May 11 10:07:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\n"
+	},
+	"e752a689dd0ac70e60d291add9f5809c.795dc9c73238a703ae5a53885c4bcf3a": {
+		"Count": 4,
+		"CrashEntry": {
+			"entry": {
+				"info": {
+					"stack": [
+						{
+							"address": 5563394,
+							"symbol": "IpfixSampler::onDataRecord",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 5564170,
+							"symbol": "non-virtual",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 5559719,
+							"symbol": "IpfixRecordDestination::receive",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 5726550,
+							"symbol": "Source\u003cIpfixRecord*\u003e::send",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 5726550,
+							"symbol": "BaseHashtable::exportBucket",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 5728338,
+							"symbol": "BaseHashtable::expireFlows",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 5709743,
+							"symbol": "BaseAggregator::exporterThread",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 5705462,
+							"symbol": "BaseAggregator::threadWrapper",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 140737349670619,
+							"symbol": "start_thread",
+							"module": "/lib/x86_64-linux-gnu/libpthread-2.27.so"
+						},
+						{
+							"address": 140737323198607,
+							"symbol": "clone",
+							"module": "(BL)"
+						}
+					],
+					"registers": [
+						{
+							"name": "rax",
+							"value": 1
+						},
+						{
+							"name": "rbx",
+							"value": 140737152815536
+						},
+						{
+							"name": "rcx",
+							"value": 9280256
+						},
+						{
+							"name": "rdx",
+							"value": 0
+						},
+						{
+							"name": "rsi",
+							"value": 140737152815536
+						},
+						{
+							"name": "rdi",
+							"value": 10053888
+						},
+						{
+							"name": "rbp",
+							"value": 10047404
+						},
+						{
+							"name": "rsp",
+							"value": 140737277668656
+						},
+						{
+							"name": "r8",
+							"value": 140737152815536
+						},
+						{
+							"name": "r9",
+							"value": 6796296
+						},
+						{
+							"name": "r10",
+							"value": 140737152813264
+						},
+						{
+							"name": "r11",
+							"value": 0
+						},
+						{
+							"name": "r12",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "r13",
+							"value": 140737152815536
+						},
+						{
+							"name": "r14",
+							"value": 140737152815536
+						},
+						{
+							"name": "r15",
+							"value": 10053888
+						},
+						{
+							"name": "rip",
+							"value": 5563394
+						},
+						{
+							"name": "eflags",
+							"value": 66118
+						},
+						{
+							"name": "cs",
+							"value": 51
+						},
+						{
+							"name": "ss",
+							"value": 43
+						},
+						{
+							"name": "ds",
+							"value": 0
+						},
+						{
+							"name": "es",
+							"value": 0
+						},
+						{
+							"name": "fs",
+							"value": 0
+						},
+						{
+							"name": "gs",
+							"value": 0
+						}
+					],
+					"disassembly": [
+						{
+							"address": 5563366,
+							"text": "mov DWORD PTR fs:[r12],0xff"
+						},
+						{
+							"address": 5563375,
+							"text": "mov rax,QWORD PTR [r15+0x118]"
+						},
+						{
+							"address": 5563382,
+							"text": "inc rax"
+						},
+						{
+							"address": 5563385,
+							"text": "mov QWORD PTR [r15+0x118],rax"
+						},
+						{
+							"address": 5563392,
+							"text": "xor edx,edx"
+						},
+						{
+							"address": 5563394,
+							"text": "div QWORD PTR [r15+0x120]"
+						},
+						{
+							"address": 5563401,
+							"text": "test rdx,rdx"
+						},
+						{
+							"address": 5563404,
+							"text": "je 0x54e4cd \u003cIpfixSampler::onDataRecord(IpfixDataRecord*)+685\u003e"
+						},
+						{
+							"address": 5563410,
+							"text": "movsxd rax,DWORD PTR fs:[r12]"
+						},
+						{
+							"address": 5563415,
+							"text": "mov rcx,QWORD PTR [rip+0x38a0e2] # 0x8d8500 \u003c__afl_area_ptr\u003e"
+						}
+					],
+					"faulting_insn": {
+						"address": 5563394,
+						"text": "div QWORD PTR [r15+0x120]"
+					},
+					"faulting_frame": {
+						"address": 5563394,
+						"symbol": "IpfixSampler::onDataRecord",
+						"module": "/data/fuzzing/vermont-fuzzing/vermont"
+					},
+					"hash": "e752a689dd0ac70e60d291add9f5809c.795dc9c73238a703ae5a53885c4bcf3a",
+					"classification": "EXPLOITABLE",
+					"extra": [
+						"Description: Possible stack corruption",
+						"Short description: PossibleStackCorruption (7/22)",
+						"Explanation: GDB generated an error while unwinding the stack and/or the stack contained return addresses that were not mapped in the inferior's process address space and/or the stack pointer is pointing to a location outside the default stack region. These conditions likely indicate stack corruption, which is generally considered exploitable."
+					]
+				},
+				"timestamp": 1591123763,
+				"orig_filename": "/data/fuzzing/xmlfuzz_out/crashes/id:000014,sig:08,src:000009,op:ext_AO,pos:763",
+				"sha1": "HO5wAhmeyTElDdcgPDawg7glBAc=",
+				"command": [
+					"/data/fuzzing/vermont-fuzzing/vermont",
+					"-f",
+					"/data/fuzzing/xmlfuzz_out/crashes/id:000014,sig:08,src:000009,op:ext_AO,pos:763"
+				]
+			},
+			"data": null
+		},
+		"Uname": "Linux fi-fuzzing 4.15.0-101-generic #102-Ubuntu SMP Mon May 11 10:07:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\n"
+	},
+	"ebbd80da3dfb12fb9e5b7e50e447a0f8.0a6fd09c81af3c9e1c0dc50bee6eb6c5": {
+		"Count": 19,
+		"CrashEntry": {
+			"entry": {
+				"info": {
+					"stack": [
+						{
+							"address": 6037947,
+							"symbol": "HostStatistics::HostStatistics",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4850635,
+							"symbol": "HostStatisticsCfg::createInstance",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4860866,
+							"symbol": "covariant",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 5655962,
+							"symbol": "CfgHelper\u003cPacketAggregator,",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 6502269,
+							"symbol": "Connector::connect",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4574248,
+							"symbol": "ConfigManager::parseConfig",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						},
+						{
+							"address": 4563322,
+							"symbol": "main",
+							"module": "/data/fuzzing/vermont-fuzzing/vermont"
+						}
+					],
+					"registers": [
+						{
+							"name": "rax",
+							"value": 0
+						},
+						{
+							"name": "rbx",
+							"value": 18446744073709551612
+						},
+						{
+							"name": "rcx",
+							"value": 47961
+						},
+						{
+							"name": "rdx",
+							"value": 9280256
+						},
+						{
+							"name": "rsi",
+							"value": 9347096
+						},
+						{
+							"name": "rdi",
+							"value": 0
+						},
+						{
+							"name": "rbp",
+							"value": 8
+						},
+						{
+							"name": "rsp",
+							"value": 140737488346656
+						},
+						{
+							"name": "r8",
+							"value": 2
+						},
+						{
+							"name": "r9",
+							"value": 0
+						},
+						{
+							"name": "r10",
+							"value": 18
+						},
+						{
+							"name": "r11",
+							"value": 140737323348928
+						},
+						{
+							"name": "r12",
+							"value": 2
+						},
+						{
+							"name": "r13",
+							"value": 140737488346984
+						},
+						{
+							"name": "r14",
+							"value": 10091360
+						},
+						{
+							"name": "r15",
+							"value": 140737488346768
+						},
+						{
+							"name": "rip",
+							"value": 6037947
+						},
+						{
+							"name": "eflags",
+							"value": 66050
+						},
+						{
+							"name": "cs",
+							"value": 51
+						},
+						{
+							"name": "ss",
+							"value": 43
+						},
+						{
+							"name": "ds",
+							"value": 0
+						},
+						{
+							"name": "es",
+							"value": 0
+						},
+						{
+							"name": "fs",
+							"value": 0
+						},
+						{
+							"name": "gs",
+							"value": 0
+						}
+					],
+					"disassembly": [
+						{
+							"address": 6037919,
+							"text": "movsxd rcx,DWORD PTR fs:[rbx]"
+						},
+						{
+							"address": 6037923,
+							"text": "mov rdx,QWORD PTR [rip+0x316356] # 0x8d8500 \u003c__afl_area_ptr\u003e"
+						},
+						{
+							"address": 6037930,
+							"text": "xor rcx,0xc384"
+						},
+						{
+							"address": 6037937,
+							"text": "inc BYTE PTR [rdx+rcx*1]"
+						},
+						{
+							"address": 6037940,
+							"text": "mov DWORD PTR fs:[rbx],0x61c2"
+						},
+						{
+							"address": 6037947,
+							"text": "mov rax,QWORD PTR [rax+0x18]"
+						},
+						{
+							"address": 6037951,
+							"text": "mov rax,QWORD PTR [rax]"
+						},
+						{
+							"address": 6037954,
+							"text": "mov eax,DWORD PTR [rax]"
+						},
+						{
+							"address": 6037956,
+							"text": "mov DWORD PTR [r14+0x170],eax"
+						},
+						{
+							"address": 6037963,
+							"text": "xor edi,edi"
+						}
+					],
+					"faulting_insn": {
+						"address": 6037947,
+						"text": "mov rax,QWORD PTR [rax+0x18]"
+					},
+					"faulting_frame": {
+						"address": 6037947,
+						"symbol": "HostStatistics::HostStatistics",
+						"module": "/data/fuzzing/vermont-fuzzing/vermont"
+					},
+					"hash": "ebbd80da3dfb12fb9e5b7e50e447a0f8.0a6fd09c81af3c9e1c0dc50bee6eb6c5",
+					"classification": "PROBABLY_NOT_EXPLOITABLE",
+					"extra": [
+						"Description: Access violation near NULL on source operand",
+						"Short description: SourceAvNearNull (16/22)",
+						"Explanation: The target crashed on an access violation at an address matching the source operand of the current instruction. This likely indicates a read access violation, which may mean the application crashed on a simple NULL dereference to data structure that has no immediate effect on control of the processor."
+					]
+				},
+				"timestamp": 1591107096,
+				"orig_filename": "/data/fuzzing/xmlfuzz_out/crashes/id:000000,sig:11,src:000000,op:flip1,pos:763",
+				"sha1": "rhWfhg82BQUdRciCFAVPrk+5D8g=",
+				"command": [
+					"/data/fuzzing/vermont-fuzzing/vermont",
+					"-f",
+					"/data/fuzzing/xmlfuzz_out/crashes/id:000000,sig:11,src:000000,op:flip1,pos:763"
+				]
+			},
+			"data": null
+		},
+		"Uname": "Linux fi-fuzzing 4.15.0-101-generic #102-Ubuntu SMP Mon May 11 10:07:26 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\n"
+	}
+}
